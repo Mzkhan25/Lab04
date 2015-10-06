@@ -1,0 +1,57 @@
+﻿@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@keyframes animatedBackground-reverse {
+	to { background-position: 0 0; }
+	from { background-position: 100% 0; }
+}
+body	{ 
+	position:absolute;
+    /*width: 560px; 
+	height: 400px;*/ 
+	background-image: url(../images/background.jpg);
+	background-position: 0px 0px;
+    z-index:0;
+	background-repeat: repeat-x;
+   vertical-align:bottom;
+
+	animation: animatedBackground 20s linear infinite;
+}
+
+.full{
+    width:100%;
+}
+.tree{
+    position:absolute;
+ 
+  top:350px;
+    width: 1378px; 
+	height: 400px; 
+    z-index:15;
+    background-image: url(../images/tree.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+   vertical-align:bottom;
+   
+
+	animation: animatedBackground-reverse 10s linear infinite;
+}
+
+#plane {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    z-index:15;
+    
+    
+
+   
+     transition: width 2s;
+}
+
+/*div:hover {
+   transform: translateY(200px);
+   
+}*/
